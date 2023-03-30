@@ -60,11 +60,11 @@ function playRound(playerSelection) {
 
 function gameResult() {
     if (playerWin > 3) {
-        return `${playerWin}:${computerWin}\nYOU WIN!`
+        return `${playerWin}:${computerWin}<br>YOU WIN!`
     } else if (playerWin == 3) {
-        return `${playerWin}:${computerWin}\nIT'S A DRAW!`
+        return `${playerWin}:${computerWin}<br>IT'S A DRAW!`
     } else {
-        return `${playerWin}:${computerWin}\nYOU LOSE!`
+        return `${playerWin}:${computerWin}<br>YOU LOSE!`
     }
 }
 
