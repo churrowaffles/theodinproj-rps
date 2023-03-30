@@ -1,0 +1,128 @@
+:root {
+    --main-bg-color: rgb(240, 240, 240);
+    --sub-background-color: rgb(223, 223, 223);
+}
+
+p {
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.player-button img {
+    width: 5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.player-button img:hover {
+    outline: 3px solid black;
+}
+
+.player-button img:active {
+    filter: invert(100%);
+}
+
+.body-right img {
+    width:100%;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.body-text {
+    text-align: center;
+}
+
+.main-body {
+    display: flex;
+}
+
+.body-left {
+    background-color: var(--sub-background-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.body-mid {
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+}
+
+.body-right {
+    background-color: var(--sub-background-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    width: 15rem;
+    text-align: center;
+}
+
+.player-label {
+    text-align: center;
+}
+
+.computer-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.round-choices {
+    display: flex;
+    flex-grow: 1;
+}
+
+.round-choices img {
+    flex-grow: 1;
+    width: 5rem;
+    padding: 2rem;
+}
+
+.round-choices p {
+    margin: auto;
+}
+
+.results {
+    max-width: 17rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 2rem;
+    background-color: var(--sub-background-color);
+}
+
+footer p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
