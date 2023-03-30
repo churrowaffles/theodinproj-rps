@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 ul {
@@ -50,6 +51,7 @@ ul {
 
 .main-body {
     display: flex;
+    margin-bottom: 5rem;
 }
 
 .body-left {
@@ -114,8 +116,7 @@ ul {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
     font-size: 0.8rem;
     padding: 2rem;
@@ -123,6 +124,7 @@ footer {
 }
 
 footer p {
+    text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
 }
