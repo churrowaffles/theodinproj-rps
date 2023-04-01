@@ -46,7 +46,7 @@ function updateRoundResult(playerSelection) {
 function playRound(playerSelection) {
     let playResultDisplay = document.querySelector("#play-count");
     updateRoundResult(playerSelection);
-    if (playCount >= 7) {
+    if (playerWin == 3 || computerWin == 3) {
         playResultDisplay.innerHTML = gameResult()
         playerWin = 0
         computerWin = 0
@@ -59,11 +59,9 @@ function playRound(playerSelection) {
 }
 
 function gameResult() {
-    if (playerWin > 3) {
+    if (playerWin == 3) {
         return `${playerWin}:${computerWin}<br>YOU WIN!`
-    } else if (playerWin == 3) {
-        return `${playerWin}:${computerWin}<br>IT'S A DRAW!`
-    } else {
+    } else if (computerWin == 3) {
         return `${playerWin}:${computerWin}<br>YOU LOSE!`
     }
 }
